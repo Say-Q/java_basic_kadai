@@ -23,6 +23,6 @@ public abstract class Kato_Chapter18 {
 		
 		commonIntroduce();
 		eachIntroduce();
-		
+		System.out.println();
 	}
 }
