@@ -6,7 +6,7 @@ public class DictionaryExec_Chapter21 {
 
 		Dictionary_Chapter21 sWord = new Dictionary_Chapter21();
 		
-		//辞書を初期化
+		//辞書をセット
 		sWord.fruitDic();
 		
 		//検索語を設定
