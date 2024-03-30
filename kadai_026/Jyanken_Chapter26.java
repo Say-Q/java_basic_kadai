@@ -16,18 +16,24 @@ public class Jyanken_Chapter26 {
 		System.out.println("チョキはscissorsのsを入力しましょう");
 		System.out.println("パーはpaperのpを入力しましょう");
 
-		//入力内容の取得
-		String input = scanner.nextLine();
+		while (true) {
 
-		if ((input.equals("r")) || (input.equals("s")) || (input.equals("p"))) {
+			//入力内容の取得
+			String input = scanner.nextLine();
 
-		} else {
+			if ((input.equals("r")) || (input.equals("s")) || (input.equals("p"))) {
 
-			System.out.println("「g,s,p」のいずれかを入力してください。");
+				return input;
+
+			} else {
+
+				System.out.println("「r,s,p」のいずれかを入力してください。");
+				//無効な入力を受け取ったらループの最初に戻る
+				continue;
+
+			}
 
 		}
-
-		return input;
 
 	}
 
@@ -107,6 +113,7 @@ public class Jyanken_Chapter26 {
 			System.out.println(loseMsg);
 
 		}
+
 		scanner.close();
 	}
 }
