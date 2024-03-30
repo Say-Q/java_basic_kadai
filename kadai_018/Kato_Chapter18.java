@@ -10,7 +10,7 @@ public abstract class Kato_Chapter18 {
 
 	public void commonIntroduce() {
 
-		System.out.println("名前は" + this.familyName + this.givenName + "です");
+		System.out.println("名前は" + this.familyName + givenName + "です");
 		System.out.println("住所は" + this.address + "です");
 
 	}
@@ -21,8 +21,8 @@ public abstract class Kato_Chapter18 {
 
 	public void execIntroduce() {
 		
-		commonIntroduce();
-		eachIntroduce();
+		this.commonIntroduce();
+		this.eachIntroduce();
 		System.out.println();
 	}
 }
